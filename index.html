@@ -11,112 +11,8 @@
     <title>Form page</title>
 </head>
 <body>
-<div class="container main_container">
-    <nav class="navbar
-      navbar-expand-lg
-      navbar-dark
-      navbar-dark bg-dark
-      d-flex
-      justify-content-between
-      align-content-lg-center
-"
-    >
-        <div class="mx-3 logo_container d-flex flex-row justify-content-between align-content-lg-center">
-        <a class="navbar-brand" href="#">
-            <img src="./img/Totalfit%20Logo%20Black.svg" alt="logo" >
-        </a>
-        <a class="navbar-brand mt-2 margin_box" href="#">
-            <img src="./img/icon-back.svg" alt="logo" >
-        </a>
-            <a class="navbar-brand mt-1" href="#">
-            <h3>Add workout</h3>
-            </a>
-    </div>
-
-        <button
-                class="navbar-toggler"
-                type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-brand"
-             id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active mr-4 mt-2">
-                    <img src="./img/look.svg" alt="logo" >
-                </li>
-                <li class="nav-item active mr-4 mt-2">
-                    <img src="./img/bell.svg" alt="logo" >
-                </li>
-                <li class="nav-item active">
-                    <img src="./img/avatar.svg" alt="logo" >
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="d-flex">
-        <div class="m-3 main_menu_container w-25">
-            <div class="media">
-                <img src="./img/Find-gym-filled.svg" class="mr-3" alt="Gym">
-                <div class="media-body">
-                    <h5 class="margin_text">Gym</h5>
-                    <div class="media mt-3 ml-3">
-                        <div class="media-body">
-                            General
-                        </div>
-                    </div>
-                    <div class="media mt-3 ml-3">
-                        <div class="media-body">
-                            Participants
-                        </div>
-                    </div>
-                    <div class="media mt-3 ml-3">
-                        <div class="media-body">
-                            Settings
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex mt-3">
-                <img src="./img/calendar.svg" class="mr-3" alt="Gym">
-                Calendar
-            </div>
-            <div class="d-flex mt-3 relative_main">
-                <div class="picture_main mr-3">
-                    <img src="./img/Progress.svg" alt="Gym">
-                </div>
-                Programming
-            </div>
-            <div class="d-flex mt-3">
-                <img src="./img/group-24px.svg" class="mr-3" alt="Gym">
-                People
-            </div>
-            <div class="d-flex mt-3">
-                <img src="./img/calendar.svg" class="mr-3" alt="Gym">
-                Resources
-            </div>
-            <div class="d-flex mt-3">
-                <img src="./img/file.svg" class="mr-3" alt="Gym">
-                Documents
-            </div>
-            <div class="d-flex mt-3">
-                <img src="./img/assigned.svg" class="mr-2" alt="Gym">
-                Apprenticeship
-            </div>
-            <div class="d-flex mt-3">
-                <img src="./img/message.svg" class="mr-2" alt="Gym">
-                Communication
-            </div>
-            <div class="d-flex mt-3">
-                <img src="./img/message.svg" class="mr-2" alt="Gym">
-                Kiosk
-            </div>
-        </div>
-        <div class="m-3">
-            <form class="needs-validation" novalidate>
+<div class="container-fluid main_container">
+    <form class="needs-validation" novalidate>
                 <div class="form-group">
                     <h2 class="font-weight-bolder form_inform_text">
                         Program
@@ -215,7 +111,7 @@
                     <div class="d-inline-flex flex-column">
                         <label class="m-t-3 form_lable">Story</label>
                         <div class="btn-group">
-                            <textarea name="comment_area" cols="50"  id="comment_area" rows="5"></textarea>
+                            <textarea name="comment_area" cols="50"  id="comment_area" rows="5">
                         </div>
                     </div>
                 </div>
@@ -223,7 +119,7 @@
                     <div class="d-inline-flex flex-column">
                         <label class="m-t-3 form_lable">Thuth to remember</label>
                         <div class="btn-group">
-                            <textarea name="comment" cols="50"  id="comment" rows="3"></textarea>
+                            <textarea name="comment" cols="50"  id="comment" rows="3">
                         </div>
                     </div>
                 </div>
@@ -279,9 +175,364 @@
                         WOD Exercises
                     </h2>
                 </div>
-                <div class="form-group d-flex">
-                    WOD Exercises
+                <div class="form-group main_container_drop">
+            <div class="container-fluid ">
+                <div class="row text-end mt-3">
+                    <div class="col-sm-3 container_text">
+                        <div class="d-inline-flex flex-column">
+                            <label class="m-t-3 form_lable">Exercise</label>
+                            <div class="btn-group">
+                                <img class="mr-2" src="./img/drop_Group%20190.svg" alt="drop">
+                                <button
+                                        type="button"
+                                        class="btn
+                                        dropdown
+                                        d-flex
+                                        justify-content-between align-self-end drop_menu_container"
+                                        data-toggle="dropdown"
+                                        data-display="static"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                >
+                                    Push-ups
+                                    <div class="drop_picture mt-2"></div>
+                                </button>
+                                <div class="dropdown-menu
+                                    box_dropdown
+                                    mt-2
+                                    border border-white"
+                                >
+                                    <button class="dropdown-item " type="button">AMRAP</button>
+                                    <button class="dropdown-item" type="button">EMOM</button>
+                                    <button class="dropdown-item" type="button">For Time</button>
+                                    <button class="dropdown-item" type="button">Tabata </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 container_text">
+                        <div class="d-inline-flex flex-column">
+                            <label class="m-t-3 form_lable">Quantity</label>
+                            <div class="btn-group">
+                                <input
+                                        type="text"
+                                        value="12"
+                                        class="btn
+                                         dropdown
+                                         d-flex
+                                         justify-content-start
+                                         drop_menu_small"
+                                        data-toggle="dropdown"
+                                        data-display="static"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="d-inline-flex flex-column">
+                            <label class="m-t-3 form_lable">Metric</label>
+                            <div class="btn-group">
+                                <button
+                                        type="button"
+                                        class="btn
+                                         dropdown
+                                         d-flex
+                                         justify-content-between
+                                         align-self-end
+                                         drop_menu_small"
+                                        data-toggle="dropdown"
+                                        data-display="static"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                >
+                                    reps
+                                    <div class="drop_picture mt-2"></div>
+                                </button>
+                                <div class="dropdown-menu
+                                    box_dropdown
+                                    mt-2
+                                    border border-white"
+                                >
+                                    <button class="dropdown-item " type="button">AMRAP</button>
+                                    <button class="dropdown-item" type="button">EMOM</button>
+                                    <button class="dropdown-item" type="button">For Time</button>
+                                    <button class="dropdown-item" type="button">Tabata </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="row text-end mt-3">
+                    <div class="col-sm-3 container_text">
+                        <div class="d-inline-flex flex-column">
+                            <label class="m-t-3 form_lable"></label>
+                            <div class="btn-group">
+                                <img class="mr-2" src="./img/drop_Group%20190.svg" alt="drop">
+                                <button
+                                        type="button"
+                                        class="btn
+                                        dropdown
+                                        d-flex
+                                        justify-content-between align-self-end drop_menu_container"
+                                        data-toggle="dropdown"
+                                        data-display="static"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                >
+                                    Burpee
+                                    <div class="drop_picture mt-2"></div>
+                                </button>
+                                <div class="dropdown-menu
+                                    box_dropdown
+                                    mt-2
+                                    border border-white"
+                                >
+                                    <button class="dropdown-item " type="button">AMRAP</button>
+                                    <button class="dropdown-item" type="button">EMOM</button>
+                                    <button class="dropdown-item" type="button">For Time</button>
+                                    <button class="dropdown-item" type="button">Tabata </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 container_text">
+                        <div class="d-inline-flex flex-column">
+                            <label class="m-t-3 form_lable"></label>
+                            <div class="btn-group">
+                                <input
+                                        type="text"
+                                        value="12"
+                                        class="btn
+                                         dropdown
+                                         d-flex
+                                         justify-content-start
+                                         drop_menu_small"
+                                        data-toggle="dropdown"
+                                        data-display="static"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="d-inline-flex flex-column">
+                            <label class="m-t-3 form_lable"></label>
+                            <div class="btn-group">
+                                <button
+                                        type="button"
+                                        class="btn
+                                         dropdown
+                                         d-flex
+                                         justify-content-between
+                                         align-self-end
+                                         drop_menu_small"
+                                        data-toggle="dropdown"
+                                        data-display="static"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                >
+                                    reps
+                                    <div class="drop_picture mt-2"></div>
+                                </button>
+                                <div class="dropdown-menu
+                                    box_dropdown
+                                    mt-2
+                                    border border-white"
+                                >
+                                    <button class="dropdown-item " type="button">AMRAP</button>
+                                    <button class="dropdown-item" type="button">EMOM</button>
+                                    <button class="dropdown-item" type="button">For Time</button>
+                                    <button class="dropdown-item" type="button">Tabata </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-end mt-3">
+                    <div class="col-sm-3 container_text">
+                        <div class="d-inline-flex flex-column">
+                            <label class="m-t-3 form_lable"></label>
+                            <div class="btn-group">
+                                <img class="mr-2" src="./img/drop_Group%20190.svg" alt="drop">
+                                <button
+                                        type="button"
+                                        class="btn
+                                        dropdown
+                                        d-flex
+                                        justify-content-between align-self-end drop_menu_container"
+                                        data-toggle="dropdown"
+                                        data-display="static"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                >
+                                    Jumps
+                                    <div class="drop_picture mt-2"></div>
+                                </button>
+                                <div class="dropdown-menu
+                                    box_dropdown
+                                    mt-2
+                                    border border-white"
+                                >
+                                    <button class="dropdown-item " type="button">AMRAP</button>
+                                    <button class="dropdown-item" type="button">EMOM</button>
+                                    <button class="dropdown-item" type="button">For Time</button>
+                                    <button class="dropdown-item" type="button">Tabata </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 container_text">
+                        <div class="d-inline-flex flex-column">
+                            <label class="m-t-3 form_lable"></label>
+                            <div class="btn-group">
+                                <input
+                                        type="text"
+                                        value="12"
+                                        class="btn
+                                         dropdown
+                                         d-flex
+                                         justify-content-start
+                                         drop_menu_small"
+                                        data-toggle="dropdown"
+                                        data-display="static"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="d-inline-flex flex-column">
+                            <label class="m-t-3 form_lable"></label>
+                            <div class="btn-group">
+                                <button
+                                        type="button"
+                                        class="btn
+                                         dropdown
+                                         d-flex
+                                         justify-content-between
+                                         align-self-end
+                                         drop_menu_small"
+                                        data-toggle="dropdown"
+                                        data-display="static"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                >
+                                    reps
+                                    <div class="drop_picture mt-2"></div>
+                                </button>
+                                <div class="dropdown-menu
+                                    box_dropdown
+                                    mt-2
+                                    border border-white"
+                                >
+                                    <button class="dropdown-item " type="button">AMRAP</button>
+                                    <button class="dropdown-item" type="button">EMOM</button>
+                                    <button class="dropdown-item" type="button">For Time</button>
+                                    <button class="dropdown-item" type="button">Tabata </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-end mt-3">
+                    <div class="col-sm-3 container_text">
+                        <div class="d-inline-flex flex-column">
+                            <label class="m-t-3 form_lable"></label>
+                            <div class="btn-group">
+                                <img class="mr-2" src="./img/drop_Group%20190.svg" alt="drop">
+                                <button
+                                        type="button"
+                                        class="btn
+                                        dropdown
+                                        d-flex
+                                        justify-content-between align-self-end drop_menu_container"
+                                        data-toggle="dropdown"
+                                        data-display="static"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                >
+                                    Jumping Jacks
+                                    <div class="drop_picture mt-2"></div>
+                                </button>
+                                <div class="dropdown-menu
+                                    box_dropdown
+                                    mt-2
+                                    border border-white"
+                                >
+                                    <button class="dropdown-item " type="button">AMRAP</button>
+                                    <button class="dropdown-item" type="button">EMOM</button>
+                                    <button class="dropdown-item" type="button">For Time</button>
+                                    <button class="dropdown-item" type="button">Tabata </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 container_text">
+                        <div class="d-inline-flex flex-column">
+                            <label class="m-t-3 form_lable"></label>
+                            <div class="btn-group">
+                                <input
+                                        type="text"
+                                        value="12"
+                                        class="btn
+                                         dropdown
+                                         d-flex
+                                         justify-content-start
+                                         drop_menu_small"
+                                        data-toggle="dropdown"
+                                        data-display="static"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="d-inline-flex flex-column">
+                            <label class="m-t-3 form_lable"></label>
+                            <div class="btn-group">
+                                <button
+                                        type="button"
+                                        class="btn
+                                         dropdown
+                                         d-flex
+                                         justify-content-between
+                                         align-self-end
+                                         drop_menu_small"
+                                        data-toggle="dropdown"
+                                        data-display="static"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                >
+                                    reps
+                                    <div class="drop_picture mt-2"></div>
+                                </button>
+                                <div class="dropdown-menu
+                                    box_dropdown
+                                    mt-2
+                                    border border-white"
+                                >
+                                    <button class="dropdown-item " type="button">AMRAP</button>
+                                    <button class="dropdown-item" type="button">EMOM</button>
+                                    <button class="dropdown-item" type="button">For Time</button>
+                                    <button class="dropdown-item" type="button">Tabata </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-end mt-3">
+                    <div class="col-sm-3">+ Add rest</div>
+                </div>
+                <div class="row text-end mt-3">
+                    <div class="col-sm-3">+ Add exercise</div>
+                </div>
+            </div>
+        </div>
                 <div class="form-group">
                     <h2 class="font-weight-bolder form_inform_text">
                         Skill
@@ -316,24 +567,418 @@
                         Warm-up
                     </h2>
                 </div>
-                <div class="form-group">
-                    Warm-up
-                </div>
+                <div class="form-group main_container_drop">
+                        <div class="container-fluid ">
+                            <div class="row text-end mt-3">
+                                <div class="col-sm-3 container_text">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable">Warm-up Exercise </label>
+                                        <div class="btn-group">
+                                            <img class="mr-2" src="./img/drop_Group%20190.svg" alt="drop">
+                                            <button
+                                                    type="button"
+                                                    class="btn dropdown d-flex justify-content-end align-self-end drop_menu_container"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                                <div class="drop_picture mt-2"></div>
+                                            </button>
+                                            <div class="dropdown-menu box_dropdown mt-2 border border-white">
+                                                <button class="dropdown-item " type="button">AMRAP</button>
+                                                <button class="dropdown-item" type="button">EMOM</button>
+                                                <button class="dropdown-item" type="button">For Time</button>
+                                                <button class="dropdown-item" type="button">Tabata </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 container_text">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable">Quantity</label>
+                                        <div class="btn-group">
+                                            <input
+                                                    type="text"
+                                                    class="btn dropdown d-flex justify-content-start drop_menu_small"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable">Metric</label>
+                                        <div class="btn-group">
+                                            <button
+                                                    type="button"
+                                                    class="btn dropdown d-flex justify-content-end drop_menu_small"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                                <div class="drop_picture mt-2"></div>
+                                            </button>
+                                            <div class="dropdown-menu box_dropdown mt-2 border border-white">
+                                                <button class="dropdown-item " type="button">AMRAP</button>
+                                                <button class="dropdown-item" type="button">EMOM</button>
+                                                <button class="dropdown-item" type="button">For Time</button>
+                                                <button class="dropdown-item" type="button">Tabata </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-end mt-3">
+                                <div class="col-sm-3 container_text">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable"></label>
+                                        <div class="btn-group">
+                                            <img class="mr-2" src="./img/drop_Group%20190.svg" alt="drop">
+                                            <button
+                                                    type="button"
+                                                    class="btn dropdown  d-flex justify-content-end drop_menu_container"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                                <div class="drop_picture mt-2"></div>
+                                            </button>
+                                            <div class="dropdown-menu box_dropdown mt-2 border border-white">
+                                                <button class="dropdown-item " type="button">AMRAP</button>
+                                                <button class="dropdown-item" type="button">EMOM</button>
+                                                <button class="dropdown-item" type="button">For Time</button>
+                                                <button class="dropdown-item" type="button">Tabata </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 container_text">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable"></label>
+                                        <div class="btn-group">
+                                            <input
+                                                    type="text"
+                                                    class="btn dropdown d-flex justify-content-start drop_menu_small"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable"></label>
+                                        <div class="btn-group">
+                                            <button
+                                                    type="button"
+                                                    class="btn dropdown d-flex justify-content-end drop_menu_small"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                                <div class="drop_picture mt-2"></div>
+                                            </button>
+                                            <div class="dropdown-menu box_dropdown mt-2 border border-white">
+                                                <button class="dropdown-item " type="button">AMRAP</button>
+                                                <button class="dropdown-item" type="button">EMOM</button>
+                                                <button class="dropdown-item" type="button">For Time</button>
+                                                <button class="dropdown-item" type="button">Tabata </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-end mt-3">
+                                <div class="col-sm-3 container_text">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable"></label>
+                                        <div class="btn-group">
+                                            <img class="mr-2" src="./img/drop_Group%20190.svg" alt="drop">
+                                            <button
+                                                    type="button"
+                                                    class="btn dropdown d-flex justify-content-end drop_menu_container"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                                <div class="drop_picture mt-2"></div>
+                                            </button>
+                                            <div class="dropdown-menu box_dropdown mt-2 border border-white">
+                                                <button class="dropdown-item " type="button">AMRAP</button>
+                                                <button class="dropdown-item" type="button">EMOM</button>
+                                                <button class="dropdown-item" type="button">For Time</button>
+                                                <button class="dropdown-item" type="button">Tabata </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 container_text">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable"></label>
+                                        <div class="btn-group">
+                                            <input
+                                                    type="text"
+                                                    class="btn dropdown d-flex justify-content-start drop_menu_small"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable"></label>
+                                        <div class="btn-group">
+                                            <button
+                                                    type="button"
+                                                    class="btn dropdown d-flex justify-content-end drop_menu_small"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                                <div class="drop_picture mt-2"></div>
+                                            </button>
+                                            <div class="dropdown-menu box_dropdown mt-2 border border-white">
+                                                <button class="dropdown-item " type="button">AMRAP</button>
+                                                <button class="dropdown-item" type="button">EMOM</button>
+                                                <button class="dropdown-item" type="button">For Time</button>
+                                                <button class="dropdown-item" type="button">Tabata </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-end mt-3">
+                                <div class="col-sm-3">+ Add exercise</div>
+                            </div>
+                        </div>
+                    </div>
                 <div class="form-group">
                     <h2 class="font-weight-bolder form_inform_text">
                         Cooldown
                     </h2>
                 </div>
                 <div class="form-group">
-                    Cooldown
-                </div>
+                    <div class="form-group main_container_drop">
+                        <div class="container-fluid ">
+                            <div class="row text-end mt-3">
+                                <div class="col-sm-3 container_text">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable">Cooldown Exercise </label>
+                                        <div class="btn-group">
+                                            <img class="mr-2" src="./img/drop_Group%20190.svg" alt="drop">
+                                            <button
+                                                    type="button"
+                                                    class="btn dropdown d-flex justify-content-end align-self-end drop_menu_container"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                                <div class="drop_picture mt-2"></div>
+                                            </button>
+                                            <div class="dropdown-menu box_dropdown mt-2 border border-white">
+                                                <button class="dropdown-item " type="button">AMRAP</button>
+                                                <button class="dropdown-item" type="button">EMOM</button>
+                                                <button class="dropdown-item" type="button">For Time</button>
+                                                <button class="dropdown-item" type="button">Tabata </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 container_text">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable">Quantity</label>
+                                        <div class="btn-group">
+                                            <input
+                                                    type="text"
+                                                    class="btn dropdown d-flex justify-content-start drop_menu_small"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable">Metric</label>
+                                        <div class="btn-group">
+                                            <button
+                                                    type="button"
+                                                    class="btn dropdown d-flex justify-content-end drop_menu_small"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                                <div class="drop_picture mt-2"></div>
+                                            </button>
+                                            <div class="dropdown-menu box_dropdown mt-2 border border-white">
+                                                <button class="dropdown-item " type="button">AMRAP</button>
+                                                <button class="dropdown-item" type="button">EMOM</button>
+                                                <button class="dropdown-item" type="button">For Time</button>
+                                                <button class="dropdown-item" type="button">Tabata </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-end mt-3">
+                                <div class="col-sm-3 container_text">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable"></label>
+                                        <div class="btn-group">
+                                            <img class="mr-2" src="./img/drop_Group%20190.svg" alt="drop">
+                                            <button
+                                                    type="button"
+                                                    class="btn dropdown  d-flex justify-content-end drop_menu_container"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                                <div class="drop_picture mt-2"></div>
+                                            </button>
+                                            <div class="dropdown-menu box_dropdown mt-2 border border-white">
+                                                <button class="dropdown-item " type="button">AMRAP</button>
+                                                <button class="dropdown-item" type="button">EMOM</button>
+                                                <button class="dropdown-item" type="button">For Time</button>
+                                                <button class="dropdown-item" type="button">Tabata </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 container_text">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable"></label>
+                                        <div class="btn-group">
+                                            <input
+                                                    type="text"
+                                                    class="btn dropdown d-flex justify-content-start drop_menu_small"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable"></label>
+                                        <div class="btn-group">
+                                            <button
+                                                    type="button"
+                                                    class="btn dropdown d-flex justify-content-end drop_menu_small"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                                <div class="drop_picture mt-2"></div>
+                                            </button>
+                                            <div class="dropdown-menu box_dropdown mt-2 border border-white">
+                                                <button class="dropdown-item " type="button">AMRAP</button>
+                                                <button class="dropdown-item" type="button">EMOM</button>
+                                                <button class="dropdown-item" type="button">For Time</button>
+                                                <button class="dropdown-item" type="button">Tabata </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-end mt-3">
+                                <div class="col-sm-3 container_text">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable"></label>
+                                        <div class="btn-group">
+                                            <img class="mr-2" src="./img/drop_Group%20190.svg" alt="drop">
+                                            <button
+                                                    type="button"
+                                                    class="btn dropdown d-flex justify-content-end drop_menu_container"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                                <div class="drop_picture mt-2"></div>
+                                            </button>
+                                            <div class="dropdown-menu box_dropdown mt-2 border border-white">
+                                                <button class="dropdown-item " type="button">AMRAP</button>
+                                                <button class="dropdown-item" type="button">EMOM</button>
+                                                <button class="dropdown-item" type="button">For Time</button>
+                                                <button class="dropdown-item" type="button">Tabata </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 container_text">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable"></label>
+                                        <div class="btn-group">
+                                            <input
+                                                    type="text"
+                                                    class="btn dropdown d-flex justify-content-start drop_menu_small"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="d-inline-flex flex-column">
+                                        <label class="m-t-3 form_lable"></label>
+                                        <div class="btn-group">
+                                            <button
+                                                    type="button"
+                                                    class="btn dropdown d-flex justify-content-end drop_menu_small"
+                                                    data-toggle="dropdown"
+                                                    data-display="static"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                            >
+                                                <div class="drop_picture mt-2"></div>
+                                            </button>
+                                            <div class="dropdown-menu box_dropdown mt-2 border border-white">
+                                                <button class="dropdown-item " type="button">AMRAP</button>
+                                                <button class="dropdown-item" type="button">EMOM</button>
+                                                <button class="dropdown-item" type="button">For Time</button>
+                                                <button class="dropdown-item" type="button">Tabata </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-end mt-3">
+                                <div class="col-sm-3">+ Add exercise</div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
                 <div class="form-group">
                     <h2 class="font-weight-bolder form_inform_text">
                         Healthy Lifestyle Habbit
                     </h2>
                 </div>
                 <div class="form-group">
-                    <div class="btn-group">
+                <div class="btn-group">
                         <button
                                 type="button"
                                 class="btn dropdown d-flex justify-content-end align-self-end drop_menu_container"
@@ -344,11 +989,7 @@
                         >
                             <div class="drop_picture mt-2"></div>
                         </button>
-                        <div class="dropdown-menu
-                                    box_dropdown
-                                    mt-2
-                                    border border-white"
-                        >
+                        <div class="dropdown-menu box_dropdown mt-2 border border-white">
                             <button class="dropdown-item " type="button">AMRAP</button>
                             <button class="dropdown-item" type="button">EMOM</button>
                             <button class="dropdown-item" type="button">For Time</button>
@@ -356,10 +997,8 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-dark">Save</button>
+                <button type="button" class="btn button_save">save</button>
             </form>
-        </div>
-    </div>
 </div>
 
 <!-- Optional JavaScript -->
